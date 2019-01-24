@@ -137,9 +137,6 @@ copy $(SolutionDir)..\..\lib\win32\glew\glew32.dll $(TargetDir) /y</Command>
     <ClInclude Include="..\..\src\vehicle.hpp" />
   </ItemGroup>
   <ItemGroup>
-    <Text Include="todo.txt" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="..\..\assets\shaders\basic.vs" />
     <None Include="..\..\assets\shaders\flat.fs" />
     <None Include="..\..\README.md" />

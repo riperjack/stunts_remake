@@ -70,11 +70,6 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="todo.txt">
-      <Filter>Source Files</Filter>
-    </Text>
-  </ItemGroup>
-  <ItemGroup>
     <None Include="..\..\README.md">
       <Filter>Source Files</Filter>
     </None>
