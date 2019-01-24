@@ -1,0 +1,13 @@
+chassisMass 1.0
+suspensionStiffness 12.88
+suspensionCompression 10.1
+suspensionDamping 3.0
+maxSuspensionTravelCm 30.0
+suspensionRestLength 0.1
+frictionSlip 100.5
+maxSuspensionForce 11600.0
+steeringClamp 0.2
+steeringIncrement 0.5
+engineForce 1.5
+rigidBodyLinearDamping 0.2
+rigidBodyAngularDamping 100.3
