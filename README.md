@@ -54,7 +54,6 @@ Another challenge was to setup all the vehicle parameters correctly, you can see
 #### Windows
 * Open the solution file with Visual Studio: 
 
-
     projects/vs2017/stunts_remake.sln
 
 * Choose 'Release x86' configuration and build solution
