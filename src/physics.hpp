@@ -7,7 +7,6 @@ class Physics {
 
 public:
 	Physics();
-	~Physics();
 	btDiscreteDynamicsWorld* dynamicsWorld;
 
 private:
