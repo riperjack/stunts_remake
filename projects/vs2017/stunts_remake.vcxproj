@@ -85,10 +85,13 @@
       <AdditionalDependencies>$(SolutionDir)..\..\lib\win32\glew\glew32.lib;$(SolutionDir)..\..\lib\win32\glm\glm_static.lib;$(SolutionDir)..\..\lib\win32\glfw\glfw3.lib;$(SolutionDir)..\..\lib\win32\OpenGL32.Lib;$(SolutionDir)..\..\lib\win32\bullet\Bullet2FileLoader.lib;$(SolutionDir)..\..\lib\win32\bullet\Bullet3Geometry.lib;$(SolutionDir)..\..\lib\win32\bullet\BulletInverseDynamics.lib;$(SolutionDir)..\..\lib\win32\bullet\Bullet3Collision.lib;$(SolutionDir)..\..\lib\win32\bullet\Bullet3OpenCL_clew.lib;$(SolutionDir)..\..\lib\win32\bullet\BulletSoftBody.lib;$(SolutionDir)..\..\lib\win32\bullet\Bullet3Common.lib;$(SolutionDir)..\..\lib\win32\bullet\BulletCollision.lib;$(SolutionDir)..\..\lib\win32\bullet\LinearMath.lib;$(SolutionDir)..\..\lib\win32\bullet\Bullet3Dynamics.lib;$(SolutionDir)..\..\lib\win32\bullet\BulletDynamics.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PostBuildEvent>
-      <Command>xcopy $(SolutionDir)..\..\assets\shaders $(TargetDir)assets\shaders /e /y /i /r
-xcopy $(SolutionDir)..\..\assets\models $(TargetDir)assets\models /e /y /i /r
-xcopy $(SolutionDir)..\..\assets\settings $(TargetDir)assets\settings /e /y /i /r
-copy $(SolutionDir)..\..\lib\win32\glew\glew32.dll $(TargetDir) /y</Command>
+      <Command>xcopy "$(SolutionDir)..\..\assets\shaders" "$(TargetDir)assets\shaders" /e /y /i /r
+
+xcopy "$(SolutionDir)..\..\assets\models" "$(TargetDir)assets\models" /e /y /i /r
+
+xcopy "$(SolutionDir)..\..\assets\settings" "$(TargetDir)assets\settings" /e /y /i /r
+
+copy "$(SolutionDir)..\..\lib\win32\glew\glew32.dll" "$(TargetDir)" /y</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -109,10 +112,35 @@ copy $(SolutionDir)..\..\lib\win32\glew\glew32.dll $(TargetDir) /y</Command>
       <AdditionalDependencies>$(SolutionDir)..\..\lib\win32\glew\glew32.lib;$(SolutionDir)..\..\lib\win32\glm\glm_static.lib;$(SolutionDir)..\..\lib\win32\glfw\glfw3.lib;$(SolutionDir)..\..\lib\win32\OpenGL32.Lib;$(SolutionDir)..\..\lib\win32\bullet\Bullet2FileLoader.lib;$(SolutionDir)..\..\lib\win32\bullet\Bullet3Geometry.lib;$(SolutionDir)..\..\lib\win32\bullet\BulletInverseDynamics.lib;$(SolutionDir)..\..\lib\win32\bullet\Bullet3Collision.lib;$(SolutionDir)..\..\lib\win32\bullet\Bullet3OpenCL_clew.lib;$(SolutionDir)..\..\lib\win32\bullet\BulletSoftBody.lib;$(SolutionDir)..\..\lib\win32\bullet\Bullet3Common.lib;$(SolutionDir)..\..\lib\win32\bullet\BulletCollision.lib;$(SolutionDir)..\..\lib\win32\bullet\LinearMath.lib;$(SolutionDir)..\..\lib\win32\bullet\Bullet3Dynamics.lib;$(SolutionDir)..\..\lib\win32\bullet\BulletDynamics.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PostBuildEvent>
-      <Command>xcopy $(SolutionDir)..\..\assets\shaders $(TargetDir)assets\shaders /e /y /i /r
-xcopy $(SolutionDir)..\..\assets\models $(TargetDir)assets\models /e /y /i /r
-xcopy $(SolutionDir)..\..\assets\settings $(TargetDir)assets\settings /e /y /i /r
-copy $(SolutionDir)..\..\lib\win32\glew\glew32.dll $(TargetDir) /y</Command>
+      <Command>xcopy "$(SolutionDir)..\..\assets\shaders" "$(TargetDir)assets\shaders" /e /y /i /r
+
+xcopy "$(SolutionDir)..\..\assets\models" "$(TargetDir)assets\models" /e /y /i /r
+
+xcopy "$(SolutionDir)..\..\assets\settings" "$(TargetDir)assets\settings" /e /y /i /r
+
+copy "$(SolutionDir)..\..\lib\win32\glew\glew32.dll" "$(TargetDir)" /y</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <PostBuildEvent>
+      <Command>xcopy "$(SolutionDir)..\..\assets\shaders" "$(TargetDir)assets\shaders" /e /y /i /r
+
+xcopy "$(SolutionDir)..\..\assets\models" "$(TargetDir)assets\models" /e /y /i /r
+
+xcopy "$(SolutionDir)..\..\assets\settings" "$(TargetDir)assets\settings" /e /y /i /r
+
+copy "$(SolutionDir)..\..\lib\win32\glew\glew32.dll" "$(TargetDir)" /y</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <PostBuildEvent>
+      <Command>xcopy "$(SolutionDir)..\..\assets\shaders" "$(TargetDir)assets\shaders" /e /y /i /r
+
+xcopy "$(SolutionDir)..\..\assets\models" "$(TargetDir)assets\models" /e /y /i /r
+
+xcopy "$(SolutionDir)..\..\assets\settings" "$(TargetDir)assets\settings" /e /y /i /r
+
+copy "$(SolutionDir)..\..\lib\win32\glew\glew32.dll" "$(TargetDir)" /y</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
