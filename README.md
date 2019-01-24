@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This is my attempt to remake one of my favourite DOS games "Stunts", released in 1990. Project is in very early stage of development. So far I've accomplished my first milestone which was to built a simple game engine that would handle graphics, physics and user input. My ultimate goal would be to re-implement core features from the original game and extend them with multiplayer support, but I don't know if there will be enough of cold, rainy Saturdays to accomplish that, lol. Anyway, here is how it looks so far:
+This is my attempt to remake one of my favourite DOS games "Stunts", released in 1990. Project is in very early stage of development. So far I've accomplished my first milestone which was to built a simple game engine that would handle graphics, physics and user input. My ultimate goal would be to re-implement core features from the original game and extend them with multiplayer support, but I don't know if there will be enough of cold, rainy Saturdays to accomplish that, lol. Anyway, here is a video that presents what I've implemented so far:
 
 [![stunts_remake_prototype](http://img.youtube.com/vi/2EhJxc9mxs4/0.jpg)](http://www.youtube.com/watch?v=2EhJxc9mxs4 "stunts_remake_prototype")
 
