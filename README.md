@@ -21,7 +21,7 @@ Currently there are following actors in the game:
 
 You may wonder why I decided to make road and terrain separate. That's because road has to have a lower friction setting than a terrain. So driving on a terrain will result in a speed decrease as you would expect in any racing game. Another approach to achieve this effect would be to raycast downward from the vehicle or from each wheel separately (btRaycastVehicle class provides that functionality) and detect material type of raycast's contact point. I might switch to that approach later on, but for now setting different friction values works ok. 
 
-After the actors are added, the main game loop starts and consists of the following actions:
+After actors are added, the main game loop starts and consists of the following actions:
 * Handle user input
 * Step physics by delta time ( time required to compute last frame )
 * Update actor's transforms ( location, rotation ) based on physics engine
