@@ -44,11 +44,11 @@ There is a lot of room for an optimialization, one of the first things that come
 
 
 #### Physics
-I integrated Bullet Physics library as a physics engine. For static objects, I'm using rigidbodies with btBvhTriangleMeshShape and per vertex collisions. Vehicle is based on a btRaycastVehicle class that comes with Bullet and gave me a lot of unexpected problems while working with it. Most notably - the vehicle was jumping on an edge loop of a triangle like if it were an obstacle, even though the surface was totaly flat. After going through a tons of documentation, source code and forums I've found out that one remedy for that is was to disable rigid body's contact processing treshold like so:
+I integrated Bullet Physics library as a physics engine. For static objects, I'm using rigidbodies with btBvhTriangleMeshShape and per vertex collisions. Vehicle is based on a btRaycastVehicle class that comes with Bullet and gave me a lot of unexpected problems while working with it. Most notably - the vehicle was jumping on an edge loop of a triangle like if it were an obstacle, even though the surface was totaly flat. After going through a tons of documentation, source code and forums I've found out that one remedy for that was to disable rigid body's contact processing treshold like so:
     
     rigidBody->setContactProcessingThreshold(0.f);
 
-Another challenge was to setup all the vehicle parameters correctly, you can see my attempts of that on the video above. This was the first time I was working with car physics and definitely a good lesson. In the end I think I'm going to implement my own vehicle class or a simple physics engine since I'm not sure if I will be able configure Bullet so that it mimicks the physics engine of the original game closely enough. Currently vehicle settings are stored in .txt file, so they can be modified without touching the source code. 
+Another challenge was to setup all the vehicle parameters correctly, you can see my attempts of that on the video above. This was the first time I was working with car physics and definitely it was a good lesson. Eventually I think I'm going to implement my own vehicle class or a simple physics engine since I'm not sure if I will be able to configure Bullet so that it mimicks the physics engine of the original game closely enough. Currently vehicle settings are stored in .txt file, so they can be modified without touching the source code. 
 
 ## Compilation
 #### Windows
