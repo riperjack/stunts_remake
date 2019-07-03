@@ -2,18 +2,15 @@
 
 ## Introduction
 
-This is my attempt to remake one of my favourite DOS games "Stunts", released in 1990. Project is in very early stage of development. So far I've accomplished my first milestone which was to built a simple game engine that would handle graphics, physics and user input. My ultimate goal would be to re-implement core features from the original game and extend them with multiplayer support, but I don't know if there will be enough of cold, rainy Saturdays to accomplish that, lol. Anyway, here is a demo that presents what I've implemented so far:
+This is my attempt to remake one of my favourite DOS games "Stunts", released in 1990. Project is in very early stage of development. So far I've accomplished my first milestone which was to built a simple game engine that would handle graphics, physics and user input. My ultimate goal would be to re-implement core features from the original game and extend them with multiplayer support.
 
 <img src="docs/demo.gif" width="600" height="390">
 
 Full HQ video is available at: http://www.youtube.com/watch?v=2EhJxc9mxs4
 
 ## Game engine
-The design of the game engine was inspired by Unity and UE4. I used object oriented design and tried to keep things as simple as possible. The base class for all the entities in the game is called Actor. Actor has two additional components: a static mesh which represents him in the rendering world and a rigid body that carries his physical properties and is used by the physics engine. Actors can be spawned by simply initializing them and adding to a scene which for now is just a vector.
+The design of the game engine was inspired by Unity and UE4. I used object oriented design and tried to keep things as simple as possible. The base class for all the entities in the game is called Actor. Actor has two additional components: a static mesh which represents him in the rendering world and a rigid body that carries his physical properties and is used by the physics engine. Actors can be spawned by simply initializing them and adding to a scene which for now is just a plain STL vector.
 
-	Actor* terrain = new Actor("assets/models/terrain.obj", physics->dynamicsWorld);
-	scene.push_back(terrain);
-    
 Currently there are following actors in the game:
 * terrain
 * road
